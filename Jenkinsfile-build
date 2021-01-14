@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
     - name: jnlp
-      image: <jnlp-image-here>
+      image: 'jenkins/inbound-agent:4.3-4-alpine'
       resources:
         limits:
           cpu: 1
