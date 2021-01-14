@@ -15,7 +15,7 @@ spec:
     container('maven') {
       sh 'pwd'
       sh 'ls -la'
-      sh 'mvn -B -ntp -Dmaven.test.failure.ignore clean compile package'
+      sh 'mvn -B -Dmaven.test.failure.ignore clean compile package'
     }
     junit '**/target/surefire-reports/TEST-*.xml'
   }
