@@ -41,6 +41,8 @@ spec:
     container('dind') {
       sh 'pwd'
       sh 'ls -la'
+      sh 'mkdir /etc/docker/certs.d/10.110.167.61:5000'
+      sh 'cp registry/certs/tls.crt /etc/docker/certs.d/10.110.167.61:5000/ca.crt'
       sh 'docker ps'
       sh 'docker login 10.110.167.61:5000 -u myuser -p mypasswd'
     }
