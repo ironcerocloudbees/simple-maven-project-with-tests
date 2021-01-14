@@ -42,6 +42,7 @@ spec:
       sh 'pwd'
       sh 'ls -la'
       sh 'docker ps'
+      sh 'docker login 10.110.167.61:5000 -u myuser -p mypasswd'
     }
   }
 }
