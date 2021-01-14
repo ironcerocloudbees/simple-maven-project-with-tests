@@ -41,6 +41,7 @@ spec:
     container('jnlp') {
       sh 'pwd'
       sh 'ls -la'
+      sh 'docker ps'
     }
   }
 }
